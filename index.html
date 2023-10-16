@@ -4,13 +4,14 @@
     <title>Google Sheets Form</title>
 </head>
 <body>
-
-    <form action="https://script.google.com/macros/s/AKfycbwW3UExxprcRWeIL9PIBoFuX-0C3-5_KTU4Kyoor6dHz67MaRJ4S-wxecEW8q1hTor2iQ/exec" method="post" id="my-form">
+  // This is a test form structure, we can add and change this as required
+  <form action="https://script.google.com/macros/s/AKfycbwW3UExxprcRWeIL9PIBoFuX-0C3-5_KTU4Kyoor6dHz67MaRJ4S-wxecEW8q1hTor2iQ/exec" method="post" id="my-form">
     <input name="Email" type="email" placeholder="Email" required>
     <input name="Name" type="text" placeholder="Name" required>
     <button type="submit">Send</button>
   </form>
-
+  
+  // Script below links directly to a pre created google sheet. Testing has worked so far, feel free to let me know if you run into any trouble  
   <script>
     window.addEventListener("load", function() {
   const form = document.getElementById('my-form');
